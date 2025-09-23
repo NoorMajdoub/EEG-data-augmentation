@@ -1,18 +1,30 @@
 # EEG-GAN: Synthetic EEG Data Generation for Enhanced Motor Imagery Classification
+Report Link :https://drive.google.com/file/d/1ahB4saeR3vZxPhlEh07vmOm0q1FkWLOU/view?usp=sharing
 ![EEG Sample](stuff/eeg.jpg)
 
-## 🧠 Overview
+## Overview
 
-This project investigates the application of **Generative Adversarial Networks (GANs)** for augmenting electroencephalogram (EEG) datasets to improve machine learning classifier performance in motor imagery recognition tasks. By generating realistic synthetic EEG signals, we address the critical challenge of data scarcity in brain-computer interface (BCI) development.
+This project investigates the application of Generative models for augmenting electroencephalogram (EEG) datasets to improve machine learning classifier performance in motor imagery recognition tasks. By generating realistic synthetic EEG signals, we address the critical challenge of data scarcity in brain-computer interface (BCI) development.
+This project is part of the Arabs in Neuroscience -Introduction to computational neuroscience program .
 
 ## 🎯 Key Features
 
 - **GAN-based EEG synthesis** for dataset augmentation
+-**VAE-based EEG synthesis** for dataset augmentation
 - **Motor imagery classification** with improved accuracy
-- **Emotion recognition** enhancement through synthetic data
+- **Emotion recognition** enhancement through synthetic data (Through Random forest/regression /supervised models)
 - **Multi-dataset validation** across different EEG sources
 - **Computationally efficient** pipeline for real-world applications
 - **Cross-subject generalization** capabilities
+  ## Data Preporcessing
+  
+  ## 🏗️ Architecture
+### Model Variants
+**Mean-Conditioned GAN** - For the EEG data we followed the approach of doing the mean of the evolution of the eeg data overtime.
+**Time-Dependent GAN** - The evolution of our approach, incorporating temporal dynamics and sequential dependencies to capture the intricate time-series with Gan.
+**Time-Dependent VAE** - Same Data approach as above for the data processing , but with VAE
+
+
 
 ## 📊 Results Highlights
 
@@ -33,9 +45,6 @@ This project investigates the application of **Generative Adversarial Networks (
    - [Dataset Link](https://www.kaggle.com/datasets/jbouv27/eeg)
    - Various EEG signal types and classifications
 
-3. **Movie Reaction Dataset** - Simplified 3-class emotion recognition
-   - Custom preprocessing for streamlined classification
-
 ## 🏗️ Architecture
 
 ### GAN Components
@@ -50,32 +59,9 @@ Raw EEG Data → Preprocessing → Feature Extraction → GAN Training → Synth
 
 ## 🚀 Quick Start
 
-### Prerequisites
-```bash
-pip install tensorflow keras numpy scipy matplotlib scikit-learn pandas
-```
 
-### Installation
-```bash
-git clone https://github.com/yourusername/eeg-gan-synthesis.git
-cd eeg-gan-synthesis
-pip install -r requirements.txt
-```
 
-### Usage
-```python
-# Load and preprocess data
-python data_preprocessing.py
 
-# Train the GAN model
-python train_gan.py --epochs 100 --batch_size 32
-
-# Generate synthetic EEG data
-python generate_synthetic.py --num_samples 1000
-
-# Evaluate classification performance
-python evaluate_classifier.py --use_synthetic True
-```
 
 ## 📁 Project Structure
 
@@ -106,8 +92,8 @@ eeg-gan-synthesis/
 ## 📈 Performance Metrics
 
 ### Motor Imagery Classification
-- **Baseline Accuracy**: X.X%
-- **With GAN Augmentation**: X.X%
+- **Baseline Accuracy**: 
+- **With GAN Augmentation**: 
 - **Improvement**: +X.X%
 
 ### Emotion Recognition
@@ -137,17 +123,12 @@ eeg-gan-synthesis/
 - **Motor imagery rehabilitation systems**
 - **Emotion recognition systems**
 
-## 📚 Publications & References
-
-This work builds upon research in:
-- Generative adversarial networks for biomedical signals
-- EEG signal processing and machine learning
-- Data augmentation techniques for neural signals
-- Motor imagery classification methods
-
 ## 👥 Team & Collaboration
 
 **Project Duration**: 5 days  
 **Team Size**: 6 members  
 **Development Framework**: Collaborative research implementation
+
+
+
 
