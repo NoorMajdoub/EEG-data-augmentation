@@ -1,5 +1,5 @@
 # EEG-GAN: Synthetic EEG Data Generation for Enhanced Motor Imagery Classification
-
+![Alt text](stuff/eeg.jpg)
 
 ## 🧠 Overview
 
