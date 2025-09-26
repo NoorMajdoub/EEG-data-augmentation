@@ -1,5 +1,5 @@
 # EEG-GAN: Synthetic EEG Data Generation for Enhanced Motor Imagery Classification
-Report Link :https://drive.google.com/file/d/1ahB4saeR3vZxPhlEh07vmOm0q1FkWLOU/view?usp=sharing
+Report Link :
 ![EEG Sample](stuff/eeg.jpg)
 
 ## Overview
@@ -128,6 +128,7 @@ eeg-gan-synthesis/
 **Project Duration**: 5 days  
 **Team Size**: 6 members  
 **Development Framework**: Collaborative research implementation
+
 
 
 
