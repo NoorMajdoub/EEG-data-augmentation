@@ -106,17 +106,15 @@ eeg-gan-synthesis/
 ### Data Preprocessing
 1. **Noise Removal**: Advanced filtering techniques
 2. **Signal Processing**: Band-pass filtering and normalization
-3. **Feature Extraction**: Time-domain, frequency-domain, and time-frequency features
+3. **Feature Extraction**: Time-domain, frequency-domain, and time-frequency features(EEG is time dep or else we lose patterns)
 4. **Segmentation**: Optimal window sizing with overlap strategies
 
 ### GAN Training Strategy
 - **Loss Functions**: Adversarial loss with gradient penalty
-- **Optimization**: Adam optimizer with learning rate scheduling
+- **Optimization**: Adam optimizer with --learning rate scheduling(to adjust in the code)
 - **Stability Techniques**: Progressive growing and spectral normalization
-- **Convergence Monitoring**: Real-time loss tracking and quality metrics
 
 ## 🎓 Research Applications
-
 - **Brain-Computer Interfaces (BCIs)**
 - **Neurological disorder diagnosis**
 - **Cognitive state monitoring**
@@ -128,6 +126,7 @@ eeg-gan-synthesis/
 **Project Duration**: 5 days  
 **Team Size**: 6 members  
 **Development Framework**: Collaborative research implementation
+
 
 
 
